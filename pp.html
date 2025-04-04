@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Detect and Define</title>
+  <link rel="icon" type="image/x-icon" href="Untitled design (1).png">
+  <link href="styles.css" rel="stylesheet"/>
+  
+  <!-- data-main attribute tells require.js to load
+       scripts/main.js after require.js loads. -->
+  <script data-main="scripts/app.js" src="scripts/require.js"></script>
+  <style>
+    header{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color:#00B9E8;
+  position: absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+}
+#buttonTop{
+  font-size:50px;
+            border-radius:10px;
+            width:170px;
+            height:50px;
+            font-size:15px;
+            text-align: center;
+            border:solid blue 3px;
+            
+           
+
+}
+
+    button{
+            font-size:50px;
+            border-radius:10px;
+            width:170px;
+            height:50px;
+            font-size:15px;
+            text-align: center;
+            border:1px solid black;
+            
+        }
+        button:hover{
+        background-color:lightblue;
+      }
+
+      .dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right:2px;
+}
+
+ 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: lightblue;
+  
+ 
+}
+    .arrow2{
+      float:right;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"style="text-decoration:none; color:black;"><div style="display:flex; justify-content: center; align-items: center;">
+      <img src="Untitled design (1).png" style="height: 60px; margin: -200x;">
+    <h1>PolicyPal</h1>
+  </div>
+  </a>
+      
+      <div class="container2">
+        <!-- First Dropdown -->
+        <div class="dropdown">
+            <a href="pp.html"><button class="dropdown-btn" id="buttonTop">Detect and Define<span class="arrow2">↓</span></button></a>
+            <div class="dropdown-content">
+                <a href="pp2.html">Insurance Terms</a>
+              
+            </div>
+        </div>
+        </div>
+
+        <!-- Second Dropdown -->
+        <div class="dropdown">
+            <button class="dropdown-btn" style="margin-right:5px;">More<span class="arrow2">↓</span></button>
+            <div class="dropdown-content">
+                <a href="about.html">About</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+        </div>
+     
+  </header>
+
+  <div id="input">
+    <div id="doc-text" contenteditable="true" placeholder="Try pasting text from a policy contract!">Changes
+      Premium Changes
+      The premium for each auto is based on information
+      Allstate has received from you or other sources.
+      You agree to cooperate with us in determining if this
+      information is correct, if it is complete, and if it
+      changes during the policy period. You agree that if
+      this information changes or is incorrect or
+      incomplete, we may adjust your premium
+      accordingly during the policy period.
+      Changes which result in a premium adjustment are
+      contained in our rules. These include, but are not
+      limited to:
+      1. autos insured by the policy, including changes
+      in use.
+      2. drivers residing in your household, their ages or
+      marital status.
+      3. coverages or coverage limits.
+      4. rating territory.
+      5. discount eligibility.
+      Any calculation or adjustment of your premium will
+      be made using the rules, rates and forms in effect,
+      and on file if required, for our use in your state.</div>
+    <br>
+    <div id="input-btns">
+      <button id="paste-btn">Paste</button>
+      <button id="clear-btn">Clear</input>
+      <button id="submit-btn">Check definitions</input>
+    </div>
+  </div>
+  
+  <div id="doc-info">
+    <div id="title">
+      <h1 id="title-button">Annotation  Tree </h1>
+    </div>
+    
+    <div class="container">
+      <div id="canvas"></div>
+    </div>
+    
+    <div id="def-tbl">
+      <div id="def-tbl-head">Term Information</div>
+      <div id="def-tbl-phrase">Phrase</div>
+      <div id="def-tbl-def">Definition</div>
+    </div>
+  </div
+  >
+  
+      
+  </body>
+</html>
